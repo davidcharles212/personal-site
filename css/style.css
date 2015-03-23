@@ -22,15 +22,11 @@ nav a {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 1.25em;
 	text-decoration: none;
-	color: #554e44;
-}
-
-nav a:visited {
-	color: #554e44
+	color: #807566;
 }
 
 nav a:hover {
-	color: #807566;
+	color: #554e44;
 }
 
 img[alt="headshot"] {
