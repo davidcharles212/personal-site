@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+
+body {
+	background-color: #EDEDE4;
+}
+
+header{
+	line-height: 50%;
+}
+
+h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
+	color: #B2641A;
+}
+
+h5 {
+	text-decoration: underline;
+}
+
+nav a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.25em;
+	text-decoration: none;
+	color: #554e44;
+}
+
+nav a:visited {
+	color: #554e44
+}
+
+nav a:hover {
+	color: #807566;
+}
+
+img[alt="headshot"] {
+	height: auto;
+	width: auto;
+	max-height: 350px;
+	max-width: 350px;
+}
