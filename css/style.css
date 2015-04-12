@@ -7,6 +7,9 @@ body {
 
 header{
 	line-height: 50%;
+	display: block;
+	position: relative;
+	float: left;
 }
 
 h2, h3, h4 {
@@ -18,20 +21,98 @@ h5 {
 	text-decoration: underline;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+/**** NAV ******/
+
+header {
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#logo {
+	width: 20%;
+	position: relative;
+	float: left;
+}
+
+nav {
+	position: relative;
+	float: right;
+	width: 80%;
+}
+
+#nav-index, #nav-gallery, #nav-credits, #nav-contact {
+	width: 25%;
+	float: left;
+}
+
 nav a {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.25em;
-	text-decoration: none;
-	color: #807566;
+  text-transform: uppercase;
+  color: #807566;
+  text-align: center;
+  text-decoration: none;
+  font: 1.25em "Ubuntu", Arial, sans-serif;
+  padding: 20px 5px;
+}
+nav a.selected {
+  background: #333;
+  color: white;
 }
 
 nav a:hover {
 	color: #554e44;
 }
 
+
+/** headshot **/
+
+#nyc {
+	display: inline-block;
+	height: 80vh;
+	width: 98vw;
+	background: url(../images/nyc.jpg) no-repeat;
+	background-size: cover;
+	opacity: .5;
+	border: 2px dotted grey;
+}
+
+/**#headshot {
+	height: 100vh;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100vw;
+}
+**/
+
+
 img[alt="headshot"] {
-	height: auto;
-	width: auto;
-	max-height: 350px;
-	max-width: 350px;
+	height: 80vh;
+	border: 2px solid black;
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+	display: block;
+	top: -537px;
+}
+
+/** RESUME **/
+
+
+#res-header {
+	line-height: 40%;
+	text-align: left;
+}
+
+#resume h2, #resume h3, #resume h4 {
+	font-family: 'Ubuntu', sans-serif;
+	color: black;
+}
+
+#res-body h4, #res-body h5{
+	line-height: 50%;
 }
